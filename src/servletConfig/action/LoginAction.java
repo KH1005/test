@@ -29,7 +29,7 @@ public class LoginAction implements Action,Preparable,ModelDriven<UserInfo>,Logi
 	Log log = LogFactory.getLog(LoginAction.class);
 	
 	@Override
-	public void setRequest(Map requestMap) {
+	public void setRequest(Map requsestMap) {
 		this.requestMap = requestMap; 
 	}
 
@@ -61,7 +61,7 @@ public class LoginAction implements Action,Preparable,ModelDriven<UserInfo>,Logi
 	@Override
 	public String execute() throws Exception {
 		if(loginDAO.loginCheck(userInfo)) {
-			sessionMap.put("userInfo", userInfo);//세션에 저장
+			sessionMap.put("userInfo", userInfo);//�꽭�뀡�뿉 ���옣
 			log.info(">>>>requestURI:"+request.getRequestURI());
 			log.info(">>>>requestID:"+requestMap.get("id").toString());
 			log.info(">>>>request PWD:"+requestMap.get("password").toString());
