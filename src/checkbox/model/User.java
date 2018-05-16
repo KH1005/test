@@ -1,6 +1,6 @@
 package checkbox.model;
 
-public class User {
+public class User { //Å×½ºÆ®
 	private String male;
 	private String female;
 	public String getMale() {

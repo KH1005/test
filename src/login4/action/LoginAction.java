@@ -5,7 +5,7 @@ import com.opensymphony.xwork2.Action;
 import login4.dao.LoginDAO;
 
 public class LoginAction implements Action{
-	String id;
+	String id; 
 	String password;
 	
 	@Override
@@ -18,7 +18,7 @@ public class LoginAction implements Action{
 		}
 	}
 	
-	public String getId() {
+	public String getId() { //sdsds
 		return id;
 	}
 	public void setId(String id) {
