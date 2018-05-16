@@ -22,7 +22,7 @@ public class LoginAction implements Preparable, Action, ModelDriven, LoginDAOAwa
 		
 	}
 		
-	public void prepare() {
+	public void prepare() { //깔깔
 		userInfo = new UserInfo();
 	}
 	
